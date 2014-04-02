@@ -1,0 +1,25 @@
+<header>
+  <a class="save">Save</a>
+  <a class="delete">Delete</a>
+</header>
+
+<div class="content">
+  <form>
+    <label>
+      <span>First Name</span>
+      <input type="text" name="firstName" placeholder="Foo" value="<%= @firstName %>" required>
+    </label>
+
+    <label>
+      <span>Last Name</span>
+      <input type="text" name="lastName" placeholder="Bar" value="<%= @lastName %>">
+    </label>
+  
+    <label>
+      <span>Email</span>
+      <input type="email" name="email" placeholder="foo@bar.co" value="<%= @email %>" required>
+    </label>  
+    
+    <button>Save</button>
+  </form>
+</div>
