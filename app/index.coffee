@@ -1,6 +1,6 @@
 require('lib/setup')
 
-Spine = require('spine')
+Spine    = require('spine')
 Users = require('controllers/users')
 
 class App extends Spine.Controller
@@ -8,7 +8,7 @@ class App extends Spine.Controller
     super
     @users = new Users
     @append @users.active()
-
+    
     Spine.Route.setup()
 
 module.exports = App
